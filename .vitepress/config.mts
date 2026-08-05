@@ -1,0 +1,43 @@
+import { fileURLToPath, URL } from 'url';
+import { defineConfig } from 'vitepress'
+import AutoImport from 'unplugin-auto-import/vite';
+import Tailwind from '@tailwindcss/vite'
+
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
+  title: "Notes",
+  description: "Notes",
+  srcDir: 'pages',
+  lang: 'zh-CN',
+  base: '/notes',
+  vite: {
+    plugins: [AutoImport({ imports: ['vue', 'vue-router'] }), Tailwind()],
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('../', import.meta.url)),
+      }
+    }
+  },
+  themeConfig: {
+    // https://vitepress.dev/reference/default-theme-config
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: '其他', link: '/regex' }
+    ],
+
+    sidebar: [
+      {
+        text: '其他',
+        items: [
+          { text: '正则表达式', link: '/regex' },
+          { text: 'HTTP 状态码', link: '/http-status-code' }
+        ]
+      }
+    ],
+
+    socialLinks: [
+      // { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    ]
+  }
+})
