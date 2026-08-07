@@ -22,8 +22,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: '其他', link: '/regex' }
+      { text: 'Tools', link: 'https://yornqiu.github.io/tools/', target: '_self' },
     ],
 
     sidebar: [
