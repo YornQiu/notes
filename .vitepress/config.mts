@@ -28,16 +28,25 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: 'Linux',
+        items: [
+          { text: '基本命令', link: '/linux/basic' },
+          { text: '高级命令', link: '/linux/advanced' },
+          { text: 'Vim', link: '/linux/vim' },
+          { text: '其他', link: '/linux/other' },
+        ]
+      },
+      {
         text: '其他',
         items: [
           { text: '正则表达式', link: '/regex' },
           { text: 'HTTP 状态码', link: '/http-status-code' }
         ]
-      }
+      },
     ],
 
     socialLinks: [
-      // { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/yornqiu/notes' }
     ]
   }
 })
