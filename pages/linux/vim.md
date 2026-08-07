@@ -76,4 +76,4 @@
 
 ## 常用快捷键
 
-![Vim-cheatsheet](/public/img/vim-cheatsheet.gif)
+![Vim-cheatsheet](./vim-cheatsheet.jpg)
