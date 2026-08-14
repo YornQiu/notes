@@ -36,6 +36,15 @@ export default defineConfig({
         ]
       },
       {
+        text: '数据库',
+        items: [
+          { text: '基础', link: '/db/base' },
+          { text: 'MySQL', link: '/db/mysql' },
+          { text: 'PostgreSQL', link: '/db/postgresql' },
+          { text: 'MongoDB', link: '/db/mongodb' },
+        ]
+      },
+      {
         text: '其他',
         items: [
           { text: '正则表达式', link: '/regex' },
