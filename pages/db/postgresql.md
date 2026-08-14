@@ -1,7 +1,9 @@
 
-# 基础命令
+# PostgreSQL
 
-## 用户管理
+## 基础命令
+
+### 用户管理
 
 1. 创建用户
 
@@ -22,7 +24,7 @@ ALTER USER username WITH PASSWORD 'new_password';
 \du
 ```
 
-## 数据库操作
+### 数据库操作
 
 - 创建数据库：
 
@@ -45,7 +47,7 @@ DROP DATABASE db_name;
 psql -U user -d db_name
 ```
 
-## 表与查询
+### 表与查询
 
 - 创建表：
 

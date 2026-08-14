@@ -1,6 +1,8 @@
-# 基础命令
+# MySQL
 
-## 用户管理
+## 基础命令
+
+### 用户管理
 
 1. 创建用户
 
@@ -22,7 +24,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
 SELECT User, Host FROM mysql.user;
 ```
 
-## 数据库操作
+### 数据库操作
 
 - 创建数据库：
 
@@ -45,7 +47,7 @@ DROP DATABASE db_name;
 USE db_name;
 ```
 
-## 表与查询
+### 表与查询
 
 - 创建表：
 

@@ -21,6 +21,10 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
+    outline: [2, 3],
     nav: [
       { text: 'Tools', link: 'https://yornqiu.github.io/tools/', target: '_self' },
     ],
@@ -29,8 +33,8 @@ export default defineConfig({
       {
         text: 'Linux',
         items: [
-          { text: '基本命令', link: '/linux/basic' },
-          { text: '高级命令', link: '/linux/advanced' },
+          { text: '基础命令', link: '/linux/basic' },
+          { text: '高级操作', link: '/linux/advanced' },
           { text: 'Vim', link: '/linux/vim' },
           { text: '其他', link: '/linux/other' },
         ]
