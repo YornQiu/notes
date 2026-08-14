@@ -38,7 +38,7 @@ export default defineConfig({
       {
         text: '数据库',
         items: [
-          { text: '基础', link: '/db/base' },
+          { text: '基础', link: '/db/basic' },
           { text: 'MySQL', link: '/db/mysql' },
           { text: 'PostgreSQL', link: '/db/postgresql' },
           { text: 'MongoDB', link: '/db/mongodb' },
