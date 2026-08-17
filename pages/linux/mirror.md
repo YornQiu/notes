@@ -38,3 +38,35 @@ Components: main contrib non-free non-free-firmware
 Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 EOF
 ```
+
+## Ubuntu 换源
+
+Ubuntu 版本代号
+
+| 版本         | 代号  |
+| ------------ | ----- |
+| Ubuntu 20.04 | focal |
+| Ubuntu 22.04 | jammy |
+| Ubuntu 24.04 | noble |
+
+### 20.04
+
+```
+cp /etc/apt/sources.list /etc/apt/sources.list.bak
+
+sed -i 's|http://archive.ubuntu.com|http://mirrors.aliyun.com|g' /etc/apt/sources.list
+sed -i 's|http://security.ubuntu.com|http://mirrors.aliyun.com|g' /etc/apt/sources.list
+```
+
+### 24.04 (新格式)
+
+```
+cp /etc/apt/sources.list.d/ubuntu.sources /etc/apt/sources.list.d/ubuntu.sources.bak
+
+sed -i 's|http://archive.ubuntu.com|http://mirrors.aliyun.com|g' /etc/apt/sources.list.d/ubuntu.sources
+sed -i 's|http://security.ubuntu.com|http://mirrors.aliyun.com|g' /etc/apt/sources.list.d/ubuntu.sources
+```
+
+### ARM 架构
+
+ARM 架构与 x86 架构的源不同，需将 `http://mirrors.aliyun.com/ubuntu` 替换为 `http://mirrors.aliyun.com/ubuntu-ports`。
