@@ -36,6 +36,7 @@ export default defineConfig({
           { text: '基础命令', link: '/linux/basic' },
           { text: '高级操作', link: '/linux/advanced' },
           { text: 'Vim', link: '/linux/vim' },
+          { text: '镜像源', link: '/linux/mirror' },
           { text: '其他', link: '/linux/other' },
         ]
       },

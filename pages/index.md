@@ -12,6 +12,7 @@ hero:
 - [基本命令](/linux/basic) - Linux 常用基础命令
 - [高级命令](/linux/advanced) - Linux 高级操作技巧
 - [Vim](/linux/vim) - Vim 编辑器使用指南
+- [镜像源](/linux/mirror) - APT 镜像源
 - [其他](/linux/other) - Linux 其他相关内容
 
 ### 数据库
