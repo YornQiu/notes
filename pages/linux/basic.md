@@ -73,13 +73,17 @@
 1. 创建和删除用户
    **useradd** / **userdel**
 
-   ```Shell
-   [root ~]# useradd ubuntu
-   [root ~]# userdel ubuntu
-   ```
-
    - `-d` - 创建用户时为用户指定用户主目录
    - `-g` - 创建用户时指定用户所属的用户组
+   - `-s` - 创建用户时为用户指定登录shell
+
+   ```Shell
+   [root ~]# useradd ubuntu -d /home/ubuntu -g users # 创建用户时为用户指定用户主目录和用户所属的用户组
+   [root ~]# useradd ubuntu -g sudo -s /bin/bash # 创建用户时为用户添加 sudo 权限，并指定登录 shell 为 bash
+   [root ~]# usermod -aG sudo ubuntu # 为用户添加 sudo 权限
+   [root ~]# id ubuntu # 查看用户信息
+   [root ~]# userdel ubuntu -r # 删除用户时同时删除用户主目录
+   ```
 
 2. 创建和删除用户组
    **groupadd** / **groupdel**
